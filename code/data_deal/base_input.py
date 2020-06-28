@@ -473,9 +473,7 @@ class BaseInput(object):
             0: join(DATA_PATH, 'train/train.txt'),
             1: join(DATA_PATH, 'dev/dev.txt'),
             2: join(DATA_PATH, 'test_1/test_1.txt'),
-            3: join(DATA_PATH, 'test_1/test_1_cl.txt'),
-            4: join(DATA_PATH, 'test_2/test_2.txt'),
-            5: join(DATA_PATH, 'test_2/test_2_cl.txt'),
+            3: join(DATA_PATH, 'test_2/test_2.txt'),
         }
         if self.from_pre_trans:
             self.data_dict = {
@@ -483,8 +481,6 @@ class BaseInput(object):
                 1: join(DATA_PATH, 'trans', 'trans_1.txt'),
                 2: join(DATA_PATH, 'trans', 'trans_2.txt'),
                 3: join(DATA_PATH, 'trans', 'trans_3.txt'),
-                4: join(DATA_PATH, 'trans', 'trans_4.txt'),
-                5: join(DATA_PATH, 'trans', 'trans_5.txt'),
             }
 
     def get_trans_sample(self, sample, return_rest_goals=False,
