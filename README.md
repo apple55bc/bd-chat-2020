@@ -2,6 +2,10 @@
 2020语言与智能技术竞赛：面向推荐的对话任务      
 第二名 强行跳大 团队
 
+# 介绍
+最终只使用了集成Goal预测、文本回复的单向注意力Bert模型。此项目还附带了一些抛弃的尝试方案，包含了基础的阅读理解模型（model/model_rc.py）、分类模型（model/model_context.py,model/model_goal.py）、QA召回（检索）模型（model/model_recall.py）的实现。    
+训练的数据存放位置和输出位置可以参考 cfg.py。训练的顺序是先运行 data_deal/pre_trans.py，再运行train/train_bert_lm.py。
+
 # 依赖
 ```text
 keras==2.3.1
