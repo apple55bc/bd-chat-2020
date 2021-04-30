@@ -18,6 +18,7 @@ nltk==3.5
  * conversation_client.py: 类似官方的那种client
  * test_client.py: 交互式的client
  * conversation_server.py: 类似官方的服务端。
+不要覆盖 data/roberta 里的 vocab.txt 和 config
 
 # 参考
  * bert4keras：https://github.com/bojone/bert4keras
